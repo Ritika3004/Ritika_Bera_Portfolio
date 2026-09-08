@@ -154,14 +154,6 @@ const projects = [
     link: 'https://github.com/Ritika3004/WORD-SEARCH',
   },
   {
-    title: 'TINT360',
-    desc: 'A comprehensive platform helping incoming students of TINT settle into campus life — hostel info, travel guides, academic resources, and FAQs — cutting repetitive queries to seniors by 60%. Initiated by a team of TINT students based on their own early campus experiences.',
-    tag: 'React · Node.js · JavaScript',
-    cat: 'fullstack',
-    img: 'assets/projects/tint360.jpg',
-    link: 'https://github.com/Ritika3004/TINT360',
-  },
-  {
     title: 'EcoSort',
     desc: 'An IoT & AI-powered smart dustbin system that automates waste segregation into Solid, Semi-Solid, Liquid, and Metal categories using an IR/proximity/rain/ultrasonic sensor array, with servo-driven diverters and a live IoT dashboard for monitoring bin levels and capacity alerts.',
     tag: 'Arduino · IoT Sensors · Web Dashboard',
