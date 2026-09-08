@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ritika Bera | Software Developer</title>
+<meta name="description" content="Portfolio of Ritika Bera — Software Developer & Competitive Programmer." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<div class="particles" aria-hidden="true">
+  <span style="top:12%; left:8%;"></span>
+  <span style="top:22%; left:85%;"></span>
+  <span style="top:35%; left:45%;"></span>
+  <span style="top:48%; left:18%;"></span>
+  <span style="top:60%; left:92%;"></span>
+  <span style="top:70%; left:60%;"></span>
+  <span style="top:80%; left:30%;"></span>
+  <span style="top:15%; left:65%;"></span>
+  <span style="top:90%; left:10%;"></span>
+  <span style="top:5%; left:40%;"></span>
+  <span style="top:55%; left:75%;"></span>
+  <span style="top:38%; left:5%;"></span>
+</div>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#about" class="logo">Ritika<span class="logo-accent"> Bera</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link active" data-nav>About</a>
+      <a href="#whatido" class="nav-link" data-nav>What I Do</a>
+      <a href="#experience" class="nav-link" data-nav>Experience</a>
+      <a href="#projects" class="nav-link" data-nav>Projects</a>
+      <a href="#miniprojects" class="nav-link" data-nav>Mini Projects</a>
+      <a href="#skills" class="nav-link" data-nav>Skills</a>
+      <a href="#education" class="nav-link" data-nav>Education</a>
+      <a href="#achievements" class="nav-link" data-nav>Achievements</a>
+      <a href="#extracurricular" class="nav-link" data-nav>Extracurricular</a>
+      <a href="#contact" class="nav-link" data-nav>Contact</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+      <i class="fa-solid fa-moon"></i>
+      <i class="fa-solid fa-sun"></i>
+    </button>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== FIXED SIDE RAILS (desktop only) ===== -->
+<aside class="side-social">
+  <img src="assets/ritika-side-avatar.jpg" alt="Ritika Bera avatar" class="side-avatar" />
+  <a href="https://github.com/Ritika3004" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/ritika-bera-878517252/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="https://x.com/RitikaBera14273" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+  <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+  <a href="mailto:ritikabera1204@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+  <span class="side-line"></span>
+  <a href="#" aria-label="Download Resume" class="side-resume"><i class="fa-solid fa-file-arrow-down"></i></a>
+</aside>
+
+<aside class="side-dotnav">
+  <a href="#about" class="dot-link active" data-nav><span class="dot-mark"></span><span class="dot-label">About</span></a>
+  <a href="#whatido" class="dot-link" data-nav><span class="dot-mark"></span><span class="dot-label">What I Do</span></a>
+  <a href="#experience" class="dot-link" data-nav><span class="dot-mark"></span><span class="dot-label">Experience</span></a>
+  <a href="#projects" class="dot-link" data-nav><span class="dot-mark"></span><span class="dot-label">Projects</span></a>
+  <a href="#miniprojects" class="dot-link" data-nav><span class="dot-mark"></span><span class="dot-label">Mini Projects</span></a>
+  <a href="#skills" class="dot-link" data-nav><span class="dot-mark"></span><span class="dot-label">Skills</span></a>
+  <a href="#education" class="dot-link" data-nav><span class="dot-mark"></span><span class="dot-label">Education</span></a>
+  <a href="#achievements" class="dot-link" data-nav><span class="dot-mark"></span><span class="dot-label">Achievements</span></a>
+  <a href="#extracurricular" class="dot-link" data-nav><span class="dot-mark"></span><span class="dot-label">Extracurricular</span></a>
+  <a href="#contact" class="dot-link" data-nav><span class="dot-mark"></span><span class="dot-label">Contact</span></a>
+</aside>
+
+<!-- ===== ABOUT / HERO ===== -->
+<section class="hero" id="about">
+  <div class="hero-bg-grid"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <i class="fa-solid fa-star sparkle" aria-hidden="true" style="top:18%; left:12%; color:var(--yellow); font-size:1.4rem; animation-delay:0s;"></i>
+  <i class="fa-solid fa-star sparkle" aria-hidden="true" style="top:30%; right:14%; color:var(--pink); font-size:1.1rem; animation-delay:1.2s;"></i>
+  <i class="fa-solid fa-bolt sparkle" aria-hidden="true" style="bottom:22%; left:8%; color:var(--blue); font-size:1.3rem; animation-delay:0.6s;"></i>
+  <i class="fa-solid fa-wand-magic-sparkles sparkle" aria-hidden="true" style="top:14%; right:22%; color:var(--violet); font-size:1.2rem; animation-delay:1.8s;"></i>
+
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <p class="hero-wave" data-reveal>👋 <span>Hi, I'm</span></p>
+      <h1 class="hero-name" data-reveal>Ritika <span class="text-gradient">Bera</span></h1>
+
+      <p class="hero-subtitle" data-reveal>
+        I'm <strong>passionate</strong> about building <strong>production-grade full-stack systems</strong>
+        and solving hard problems with clean, <strong>scalable engineering</strong>.
+      </p>
+
+      <div class="role-pills" data-reveal>
+        <span>Software Developer</span>
+        <span>Competitive Programmer</span>
+        <span>Problem Setter</span>
+        <span>Mentor</span>
+        <span>Engineer</span>
+        <span>Learner</span>
+      </div>
+
+      <p class="hero-desc" data-reveal>
+        Computer Science graduate from Techno India College of Technology, currently working as a
+        Full Stack Developer at Rezolve AI. I enjoy building reliable backend systems and APIs as much as I enjoy
+        competitive programming — currently open to full-time opportunities.
+      </p>
+
+      <div class="hero-cta" data-reveal>
+        <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="btn btn-outline"><i class="fa-solid fa-download"></i> Download CV</a>
+      </div>
+    </div>
+
+    <div class="hero-portrait" data-reveal>
+      <div class="portrait-frame">
+        <img src="assets/ritika-portrait-nobg.png" alt="Ritika Bera portrait" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHAT I DO ===== -->
+<section class="section services" id="whatido">
+  <div class="container">
+    <p class="section-tag center" data-reveal><i class="fa-solid fa-bolt"></i> What I Do</p>
+    <h2 class="section-title center" data-reveal>What I <span class="text-cyan">Do Best</span></h2>
+    <p class="section-desc center" data-reveal>A mix of full-stack engineering, problem setting, and mentoring — here's where I spend most of my time.</p>
+
+    <div class="services-grid">
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Frontend Development</h3>
+        <p>Building responsive interfaces with React, JavaScript, HTML/CSS.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+        <h3>Backend &amp; API Development</h3>
+        <p>Designing production APIs with Node.js, Express, FastAPI, and PostgreSQL.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <h3>System Design</h3>
+        <p>Modular backend architecture, DB migrations, Redis caching, and Dockerized services.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+        <h3>Machine Learning</h3>
+        <p>Applying NLP and ML — from grading systems to AI-powered product search.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-code-compare"></i></div>
+        <h3>Competitive Programming</h3>
+        <p>Setting problems and editorials for Full Stack, System Design, DSA, and more.</p>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+        <h3>Mentoring &amp; Teaching</h3>
+        <p>Section-leading, code reviews, and 1:1 feedback for learners worldwide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="section experience" id="experience">
+  <div class="container">
+    <p class="section-tag center" data-reveal><i class="fa-solid fa-briefcase"></i> Where I've Worked</p>
+    <h2 class="section-title center" data-reveal>My <span class="text-gradient">Experience</span></h2>
+
+    <div class="timeline">
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Aug 2026 — Present</span>
+          <h3>Full Stack Developer</h3>
+          <span class="timeline-company">Rezolve AI · Kolkata, India</span>
+          <p>Contributing to production-grade web services with async processing, authentication, and modular architecture. Integrating Salesforce CRM with an enterprise dashboard, and building reliable workflows using Redis caching, scheduled data sync, DB migrations, Dockerized services, and automated testing.</p>
+          <div class="timeline-tags">
+            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>React</span><span>Docker</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Apr 2025 — Jul 2026</span>
+          <h3>Problem Setter &amp; Technical Content Reviewer</h3>
+          <span class="timeline-company">Scaler by InterviewBit · Remote (Bangalore, India)</span>
+          <p>Delivered 200+ technical editorials and 100+ cue cards across Full Stack, System Design (LLD/HLD), AWS, DevOps, OS, and SQL for a platform supporting 1,000+ active learners. Designed 600+ MCQs and 100+ coding problems, and standardized 200+ instructor/alumni cue cards to reduce content deployment turnaround.</p>
+          <div class="timeline-tags">
+            <span>System Design</span><span>DSA</span><span>Technical Writing</span><span>SQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Apr 2025 — Jun 2025</span>
+          <h3>Section Leader</h3>
+          <span class="timeline-company">Stanford University's Code in Place · Remote</span>
+          <p>Mentored 10+ international students as a Section Leader, teaching Python fundamentals (CS106A), conducting code reviews and 1:1 feedback sessions — achieving a 90% assignment completion rate over 6 weeks.</p>
+          <div class="timeline-tags">
+            <span>Python</span><span>Mentoring</span><span>Code Review</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <p class="section-tag center" data-reveal><i class="fa-solid fa-star"></i> Featured Work</p>
+    <h2 class="section-title center" data-reveal>Featured <span class="text-pink">Projects</span></h2>
+    <p class="section-desc center" data-reveal>A mix of full-stack builds, ML experiments, and web projects I've shipped end-to-end.</p>
+
+    <div class="filters" data-reveal>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+      <button class="filter-btn" data-filter="ml">AI / ML</button>
+      <button class="filter-btn" data-filter="web">Web Dev</button>
+      <button class="filter-btn" data-filter="dsa">DSA</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <!-- injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== MINI PROJECTS ===== -->
+<section class="section mini-projects" id="miniprojects">
+  <div class="container">
+    <p class="section-tag center" data-reveal><i class="fa-solid fa-puzzle-piece"></i> Practice &amp; Fun</p>
+    <h2 class="section-title center" data-reveal>Mini <span class="text-violet">Projects</span></h2>
+    <p class="section-desc center" data-reveal>Small browser-based builds — quick, focused, and fun to make.</p>
+
+    <div class="mini-projects-grid" id="miniProjectsGrid">
+      <!-- injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section skills" id="skills">
+  <div class="container">
+    <p class="section-tag center" data-reveal><i class="fa-solid fa-bolt"></i> Technical Expertise</p>
+    <h2 class="section-title center" data-reveal>Skills &amp; <span class="text-cyan">Tools</span></h2>
+
+    <div class="skills-grid" data-reveal>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy" /><span>HTML5</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy" /><span>CSS3</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy" /><span>JavaScript</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" loading="lazy" /><span>React</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" loading="lazy" /><span>Node.js</span></div>
+      <div class="skill-card"><i class="fa-solid fa-server" style="color:#f5f5f5"></i><span>Express.js</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="" loading="lazy" /><span>FastAPI</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy" /><span>Python</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" loading="lazy" /><span>Java</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="" loading="lazy" /><span>C</span></div>
+      <div class="skill-card"><i class="fa-solid fa-database" style="color:#4A9FDB"></i><span>SQL</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" loading="lazy" /><span>PostgreSQL</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="" loading="lazy" /><span>MongoDB</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" loading="lazy" /><span>Git</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="" loading="lazy" /><span>NumPy</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="" loading="lazy" /><span>Pandas</span></div>
+      <div class="skill-card"><i class="fa-solid fa-flask" style="color:#f5f5f5"></i><span>Flask</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="" loading="lazy" /><span>Next.js</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="" loading="lazy" /><span>Tailwind CSS</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="" loading="lazy" /><span>SQLite</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="" loading="lazy" /><span>Arduino</span></div>
+      <div class="skill-card"><i class="fa-solid fa-file-code" style="color:#F4CA16"></i><span>EJS</span></div>
+      <div class="skill-card"><i class="fa-solid fa-brain" style="color:#FF7A00"></i><span>Machine Learning</span></div>
+      <div class="skill-card"><i class="fa-solid fa-cube" style="color:#ED1E79"></i><span>Internet Computer (ICP)</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" loading="lazy" /><span>Docker</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="" loading="lazy" /><span>Redis</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="" loading="lazy" /><span>Azure</span></div>
+    </div>
+
+    <div class="soft-skills" data-reveal>
+      <span class="soft-skills-label">Soft Skills</span>
+      <div class="soft-skills-pills">
+        <span><i class="fa-solid fa-crown"></i> Leadership</span>
+        <span><i class="fa-solid fa-pen-nib"></i> Writing</span>
+        <span><i class="fa-solid fa-clock"></i> Time Management</span>
+        <span><i class="fa-solid fa-flag"></i> Ownership</span>
+        <span><i class="fa-solid fa-handshake"></i> Collaboration</span>
+        <span><i class="fa-solid fa-comments"></i> Stakeholder Communication</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section class="section education" id="education">
+  <div class="container">
+    <p class="section-tag center" data-reveal><i class="fa-solid fa-graduation-cap"></i> Academic Background</p>
+    <h2 class="section-title center" data-reveal>My <span class="text-blue">Education</span></h2>
+
+    <div class="timeline">
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Sep 2022 — Jul 2026</span>
+          <h3>B.Tech in Computer Science and Engineering</h3>
+          <span class="timeline-company">Techno India College of Technology · Kolkata, India</span>
+          <p>SGPA: 9.4 / 10.0 (8th sem).</p>
+          <div class="timeline-tags">
+            <span>Operating Systems</span><span>OOP</span><span>DBMS</span><span>Computer Networks</span><span>DSA</span><span>Python</span><span>Java</span><span>Software Engineering</span><span>Digital Logic</span><span>Computer Architecture</span><span>Theory of Computation</span><span>AI</span><span>Cloud Computing</span><span>Cyber Security</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Jun 2020 — Jul 2022</span>
+          <h3>Higher Secondary Education</h3>
+          <span class="timeline-company">Rani Benode Manjari Govt. Girls' School · Jhargram, West Bengal, India</span>
+          <p>Class 12: 94%.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACHIEVEMENTS ===== -->
+<section class="section achievements" id="achievements">
+  <div class="container">
+    <p class="section-tag center" data-reveal><i class="fa-solid fa-award"></i> Recognition</p>
+    <h2 class="section-title center" data-reveal>Achievements &amp; <span class="text-gradient">Awards</span></h2>
+
+    <div class="ach-list">
+      <div class="ach-item" data-reveal>
+        <i class="fa-solid fa-chess-knight"></i>
+        <div><h4>Knight — Top 3% Worldwide</h4><p>Max rating of 2074.</p></div>
+      </div>
+      <div class="ach-item" data-reveal>
+        <i class="fa-solid fa-code"></i>
+        <div><h4>Pupil on Codeforces</h4><p>Max rating of 1273.</p></div>
+      </div>
+      <div class="ach-item" data-reveal>
+        <i class="fa-solid fa-ranking-star"></i>
+        <div><h4>LeetCode Biweekly Contest 161</h4><p>Secured global rank 449 out of 31,000.</p></div>
+      </div>
+      <div class="ach-item" data-reveal>
+        <i class="fa-solid fa-medal"></i>
+        <div><h4>2nd Place — TINT CSE CODESTAR'25 2.0 (2025)</h4><p>Intra-college coding contest. (Certificate)</p></div>
+      </div>
+      <div class="ach-item" data-reveal>
+        <i class="fa-solid fa-trophy"></i>
+        <div><h4>Smart India Hackathon — Internal Hackathon (2024)</h4><p>Top 20 ranking among 120 competing teams.</p></div>
+      </div>
+      <div class="ach-item" data-reveal>
+        <i class="fa-solid fa-briefcase"></i>
+        <div><h4>McKinsey.org Forward Learning Program (2025)</h4><p>Accepted into the program.</p></div>
+      </div>
+      <div class="ach-item" data-reveal>
+        <i class="fa-solid fa-graduation-cap"></i>
+        <div><h4>Code In Place '24 (CS106A) — Stanford University</h4><p>Accepted and certified — program has a 10% acceptance rate. (Certificate, June 2024)</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXTRACURRICULAR ===== -->
+<section class="section extracurricular" id="extracurricular">
+  <div class="container">
+    <p class="section-tag center" data-reveal><i class="fa-solid fa-people-group"></i> Beyond Work</p>
+    <h2 class="section-title center" data-reveal>Leadership &amp; <span class="text-gradient">Community</span></h2>
+
+    <div class="ach-list">
+      <div class="ach-item" data-reveal>
+        <i class="fa-solid fa-people-group"></i>
+        <div><h4>Open-Source Lead — Developer Student Clubs TINT</h4><p>Kolkata, India · Aug 2023 – Oct 2024 — Conducted online and offline technical and soft-skills events to enrich students in technology.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info" data-reveal>
+      <p class="section-tag" data-reveal><i class="fa-solid fa-paper-plane"></i> Get In Touch</p>
+      <h2 class="section-title" data-reveal>Let's create something <span class="text-gradient-alt">amazing</span> together.</h2>
+      <p class="about-text" data-reveal>
+        Have a project in mind, an opportunity to discuss, or just want to say hi?
+        Fill out the form or reach out directly through any of the channels below.
+      </p>
+
+      <div class="contact-methods">
+        <a href="mailto:ritikabera1204@gmail.com" class="contact-method">
+          <i class="fa-solid fa-envelope"></i>
+          <div><span>Email</span><p>ritikabera1204@gmail.com</p></div>
+        </a>
+        <div class="contact-method">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><span>Location</span><p>Kolkata, India</p></div>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/Ritika3004" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ritika-bera-878517252/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://x.com/RitikaBera14273" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" data-reveal>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="jane@email.com" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Project inquiry" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project... (lorem ipsum dolor sit amet)" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary form-submit">
+        Send Message <i class="fa-solid fa-paper-plane"></i>
+      </button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <a href="#about" class="logo">Ritika<span class="logo-accent"> Bera</span></a>
+    <p>&copy; 2026 Ritika Bera. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/Ritika3004" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ritika-bera-878517252/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://x.com/RitikaBera14273" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

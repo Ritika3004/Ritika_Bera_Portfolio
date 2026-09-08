@@ -1,0 +1,13 @@
+{
+  "name": "ritika-bera-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio website of Ritika Bera",
+  "scripts": {
+    "dev": "live-server --port=3000 --no-css-inject --ignore=node_modules,package.json,package-lock.json",
+    "build": "echo No build step needed — this is a static site; index.html is served as-is."
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
